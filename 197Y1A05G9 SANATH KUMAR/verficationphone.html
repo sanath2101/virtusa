@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <style>
+        body{
+  margin: 0;
+  padding: 0;
+  background:#fff;
+  }
+  .logo{
+width:100px;
+}
+.main{
+width:100%;
+}
+form{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 1px solid #d5d2d2;
+border-radius: 10px;
+width: 750px;
+padding: 25px;
+}
+h2{
+position: relative;
+margin: -10px 0 0 13px;
+font-size: 23px;
+font-weight: bold;
+font-family:jost;
+letter-spacing: 1px;
+}
+input{
+border: 1px solid #d5d2d2;
+border-radius: 5px;
+height: 35px;
+padding: 0 10px;
+font-size: 15px;
+outline: none;
+}
+input:focus{
+border: 1.5px solid #1f52f9;
+}
+input[type="code"]{
+display: block;
+margin: 10px 0 0 10px;
+width: 390px;
+}
+a{
+display: block;
+position: relative;
+font-family: roboto;
+text-decoration: none;
+}
+.line4
+{
+font-size: 15px;
+margin: 20px 8px;
+color: #4971f6;
+display:inline-block;
+font-family: arial rounded mt;
+}
+input[type="submit"]{
+background: #4971f6;
+border: none;
+color: #fff;
+padding: 10px 30px;
+font-size: 15px;
+margin: 40px 0 30px 180px;
+}
+input[type="submit"]:hover{
+background: #254fdb;
+}
+label{
+position: relative;
+top: -28px;
+left: 20px;
+font-family: roboto;
+font-size: 15px;
+color:#555;
+pointer-events: none;
+transition: .2s all;
+}
+input:focus ~label,
+input:valid ~label{
+top: -49px;
+left: 15px;
+background: #fff;
+padding: 0 5px;
+font-size: 10px;
+color: #1f52f9;
+}
+.side-image{
+display: inline-block;
+position: relative;
+top: 70px;
+left: 45%;
+transform: translate(90%,80%);
+}
+.side-logo{
+max-width:220px;
+max-height: 70%;
+display:block;
+}
+
+
+  
+    </style>
+    <meta charset = "utf=8">
+<title>Verifying your phone number</title>
+<link href = 'https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href = 'https://fonts.googleapis.com/css?family=Material Icons' rel='stylesheet'>
+<link href = "https://fonts.googleapis.com.css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+<link rel = "stylesheet" href="style.css">
+</head>
+<body>
+<div class ="main">
+<form class =" " action="index.html" method ="post">
+<div class = "head">
+<img src="google.png" alt="Google">
+<h2>Verifying your phone number</h2>
+</div>
+<p>For your security,Google wants to make sure that it's<br>
+    really you.Google will send a text message with a six-<br>
+    digit verification code.<br>
+    India: 7702897084
+</p>
+<div class ="code">
+    <input type = "code" name ="" value=""  id="vcode" required>
+    <label>Enter Verification code</label>
+    <p>Standard rates apply</p>
+    <span id="messages" style="color:red"> </span><br></br>
+    </div>
+    <a href="Phonenumber.html" class="line4">Back</a>
+    <a href="gmail.html">
+    <input type = "submit" name="" value="Next" onclick="return vvcode()"></a>
+</form>
+<script type="text/javascript">
+    function vvcode(){
+        var x=document.getElementById('vcode').value;
+        if(x==" "){
+            document.getElementById("messages").innerHTML="**Please Enter the code**";
+            return false;
+        }
+        if(isNaN(x)){
+            document.getElementById("messages").innerHTML="**enter only Numeric Value**";
+            return flase;
+        }
+        if(x.length<6){
+            document.getElementById("messages").innerHTML="**Mobile Number must be 6 digits**";
+            return flase;
+        }
+        if(x.length>6){
+            document.getElementById("messages").innerHTML="**Mobile Number must be 6 digits**";
+            return flase;
+        }
+
+
+
+    }
+
+</script>
+</body>
+</html>
