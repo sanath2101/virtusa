@@ -1,0 +1,130 @@
+body
+{
+  background-color:silver;
+ }
+#h
+{
+  background-color: lightcyan; 
+  font-size: 50px;
+  font-weight:300;
+  background-image:linear-gradient(45deg, #553c9a, #ee4b2b);
+  padding: 20px 0;
+  text-align: center;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+  border-style:solid ;
+}
+#first
+{
+    cursor:pointer;
+    background-color:purple;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+#second
+{
+  cursor:pointer;
+    background-color:skyblue;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+#third
+{
+  cursor:pointer;
+    background-color:purple;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+#four
+{
+  cursor:pointer;
+    background-color:skyblue;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+#five
+{
+  cursor:pointer;
+    background-color:purple;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+#six
+{
+  cursor:pointer;
+    background-color:skyblue;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+#seven
+{
+  cursor:pointer;
+    background-color:purple;
+    display: block;
+    padding: 15px;
+    width: 250px;
+    margin-top: 20px;
+    color: white;
+}
+#create
+{
+    position: relative;
+    margin-left: 150px;
+}
+.mainContainer
+{
+    display:flex;
+}
+.leftContainer
+{
+    width: 20%;
+}
+.rightContainer{
+    padding-top: 125px;
+    padding-left: 150px;
+    margin-bottom:50px ;
+    width:50%;
+}
+#first:hover,#second:hover,#third:hover,#four:hover,#five:hover,#six:hover,#seven:hover
+{
+    background-color: red;
+}
+#createAccount,#deleteAccount,#updateAccount,#displayAccount,#depositAmount,#withDraw,#transferFunds{
+    display: none;
+    
+}
+#submit,#reset
+{
+    cursor:pointer;
+    padding: 8px;
+    width:70px;
+    text-align: center;
+    background-color: slateblue;
+    color:white;
+}
+#f
+{
+  background-color:lightcyan ; 
+  font-size: 35px;
+  border-style: solid;
+  margin-top: 50px;
+  padding: 35px 0;
+}
